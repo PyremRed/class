@@ -1,0 +1,137 @@
+@charset "utf-8";
+body {
+    display: flex;
+    flex-direction: column; /* Cambiado para asegurar que los elementos se apilen verticalmente */
+    justify-content: flex-start; /* Cambiado para alinear elementos desde el principio */
+    align-items: center;
+    margin: 0;
+    background-color: #F0E2D5;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 447px;
+    height: 559px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.header {
+    background-color: #5DC2B2;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+.nav-link:hover {
+    color: #4b3832;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.main-content {
+    padding-top: 70px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent; /* Fondo transparente */
+    clear: both; /* Asegura que la galería se alinee debajo de las slides */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.photo-card {
+    width: 30%;
+    text-align: center;
+    background-color: #5DC2B2; /* Color del fondo del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#gallery .photo-card p {
+    color: #FFF;
+}
+#redes-sociales {
+    background-color: #4b3832; /* Color de fondo similar al de los marcos */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#redes-sociales h2 {
+    color: #fff; /* Color del texto */
+    margin-bottom: 20px;
+    font-size: 24px;
+	
+}
+.iconos-redes img {
+    width: 40px; /* Ajusta el tamaño del ícono */
+    height: 40px; /* Mantén la proporción del ícono */
+    transition: transform 0.3s ease;}
+
+.iconos-redes a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.iconos-redes img:hover {
+    transform: scale(1.2);

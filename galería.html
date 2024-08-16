@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+        <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="acercade.html" class="nav-link">Acerca de</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Menú</a></li>
+                <li class="nav-item logo"><a href="#"><img src="logotipo.png" alt="Logo"></a></li>
+                <li class="nav-item"><a href="galería.html" class="nav-link">Gallería</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ubicación</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">¡Contáctanos!</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+    <style>
+	.header { font-family:Georgia, "Times New Roman", Times, serif;
+    background-color: #5DC2B2;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+.nav-link:hover {
+    color: #4b3832;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.main-content {
+    padding-top: 70px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+    margin: 50px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(3);
+        }
+    </style>
+</head>
+<body> 
+    <div class="gallery">
+        <img src="image0.png" alt="Foto 1">
+        <img src="image1.png" alt="Foto 2">
+        <img src="image2.png" alt="Foto 3">
+        <img src="image3.png" alt="Foto 4">
+        <img src="image4.png" alt="Foto 5">
+        <img src="pastel.png" alt="Foto 6">
+        <img src="equipocafeconleche.jpg" alt="Foto 7">
+        <img src="expcafe.jpg" alt="Foto 8">
+        <img src="frutos rojos.jpg" alt="Foto 9">
+        <img src="crecife.jpg" alt="Foto 10">
+    </div>
+</body>
+</html>

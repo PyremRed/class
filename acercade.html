@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Café con leche</title>
+    <link rel="stylesheet" href="estilito.css"s>
+     <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="acercade.html" class="nav-link">Acerca de</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Menú</a></li>
+                <li class="nav-item logo"><a href="#"><img src="logotipo.png" alt="Logo"></a></li>
+                <li class="nav-item"><a href="galería.html" class="nav-link">Gallería</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ubicación</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">¡Contáctanos!</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+</head>
+<body>
+
+    <section class="about-section">
+        <div class="about-image left">
+        </div>
+        <div class="about-content with-bg">
+            <h1>QUIÉNES SOMOS</h1>
+            <p>Inaugurado en 1994, Café con leche abrió sus puertas en una ubicación en el Blvd. Agua Caliente, ofreciendo un espacio social donde se degustaban deliciosos pasteles con sabores vanguardistas y una extensa barra de diferentes variedades de café y té. Posteriormente, se abrió la primera sucursal en la Av. Sonora, mejor conocida como "La Recta", en la colonia Chapultepec, añadiendo algunos platillos de desayuno y almuerzo al menú original para complementar los pasteles y postres que ya nos caracterizaban. Esta primera sucursal ofrecía un espacio más grande y cómodo para la convivencia, pero seguíamos siendo reconocidos principalmente como cafetería y pastelería.</p>
+        </div>
+
+        <div class="about-image right">
+            <img src="crecife.jpg" alt="Crecimiento de Café con leche">
+        </div>
+        <div class="about-content">
+            <p>Crecimos con pasos pequeños pero firmes. Con un menú cada vez más extenso y demostrando que para nosotros el sabor no tiene fronteras, se añadieron platillos de la cocina mexicana y de otros países, todo con el objetivo de enriquecer la experiencia de nuestros comensales.</p>
+        </div>
+
+        <div class="about-image left">
+            <img src="expcafe.jpg" alt="Expansión de Café con leche">
+        </div>
+        <div class="about-content with-bg">
+            <h2>SEGUIMOS CRECIENDO</h2>
+            <p>Hoy contamos con 6 sucursales de restaurante y 4 pastelerías de calidad gourmet, y seguimos creciendo para estar más cerca de ti. Cada uno de nuestros espacios y comedores están diseñados cuidando cada detalle para mejorar tu experiencia con nosotros. Teniendo la calidad como uno de nuestros principales valores, desde el inicio hemos elaborado todos nuestros pasteles y platillos de manera artesanal con ingredientes de la más alta calidad y libres de conservadores.</p>
+        </div>
+        
+        <div class="about-image right">
+        </div>
+        <div class="about-content">
+            <h2>GRACIAS A TI</h2>
+            <p>Nos caracterizamos por una mezcla de innovación, tradición y visión, lo que nos hace continuar en constante desarrollo y crecimiento, y nuestro equipo de trabajo es el mejor ejemplo de ello. Es a través de cada uno de nuestros colaboradores que hemos logrado consentirte con nuestros pasteles y platillos, y son ellos quienes nos han hecho crecer y fortalecernos al compartir su tiempo y talentos con nosotros con el propósito de servir y mejorar continuamente.</p>
+        </div>
+
+        <div class="about-image left">
+        </div>
+        <div class="about-content with-bg">
+            <p>Orgullosos de nuestro equipo y respaldados por casi 30 años de experiencia sirviendo a la comunidad de Tijuana, en Café con leche siempre tendremos un espacio cálido y cómodo para que disfrutes con tus amigos, familia o en el trabajo, disfrutando de exquisita comida y un excelente servicio.</p>
+            <p>Muchas gracias por tu preferencia.</p>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="value-item">
+            <h3>SERVICIO</h3>
+            <p>Nos caracteriza la amabilidad y profesionalismo de nuestro personal, mejorándose constantemente para brindar un mejor servicio.</p>
+        </div>
+        <div class="value-item">
+            <h3>AMBIENTE</h3>
+            <p>Sabemos que somos el lugar adecuado para disfrutar de una tarde agradable con amigos y familiares, por eso nos preocupamos por crear un ambiente ideal y asegurarnos de que disfrutes de un ambiente agradable.</p>
+        </div>
+        <div class="value-item">
+            <h3>CALIDAD</h3>
+            <p>El delicioso sabor de nuestros platillos habla del compromiso que Café con leche tiene con su comunidad, manejando un estándar de calidad que solo va en aumento para brindar los mejores sabores al gusto del cliente.</p>
+        </div>
+    </section>
+
+    <section class="purpose-section">
+        <h2>Nuestro Propósito</h2>
+        <p>En Café con leche promovemos la felicidad a través de la convivencia y cuidamos cada detalle para que tu corazón se sienta en casa.</p>
+        <p>Trabajamos para que puedas vivir con las personas que más amas, porque creemos que la compañía es el mejor alimento.</p>
+    </section>
+
+    <script>
+        // Efecto de aparición simple
+        document.addEventListener("DOMContentLoaded", function() {
+            const aboutSection = document.querySelector('.about-section');
+            const valuesSection = document.querySelector('.values-section');
+            const purposeSection = document.querySelector('.purpose-section');
+
+            aboutSection.style.opacity = 0;
+            valuesSection.style.opacity = 0;
+            purposeSection.style.opacity = 0;
+
+            setTimeout(() => {
+                aboutSection.style.transition = 'opacity 1.5s ease';
+                aboutSection.style.opacity = 1;
+            }, 300);
+
+            setTimeout(() => {
+                valuesSection.style.transition = 'opacity 1.5s ease';
+                valuesSection.style.opacity = 1;
+            }, 1000);
+
+            setTimeout(() => {
+                purposeSection.style.transition = 'opacity 1.5s ease';
+                purposeSection.style.opacity = 1;
+            }, 1700);
+        });
+    </script>
+    <section id="redes-sociales">
+    <h2>Síguenos en</h2>
+    <div class="iconos-redes">
+        <a href="https://www.facebook.com/CafeConLecheKotcoffeeShop" target="_blank">
+            <img src="logo facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/cafe_con_leche_ens/" target="_blank">
+            <img src="instagram logo.png" alt="Instagram">
+        </a>
+</body>
+</html>
